@@ -1,6 +1,7 @@
+# smartClassRoom
+
 Background
 ----------------
-# smartClassRoom
 smart class room contain facial recognition attending system and identify the sleep student in the classroom .
 we use some enhanced image processing methods to train the data as also recognise the objects.We use some machine learning  
 algorithem for detection the faces and eyes directly.
