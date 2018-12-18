@@ -1,4 +1,5 @@
- smartClassRoom
+#smartClassRoom
+
 Background
 -----------
 smart class room contain facial recognition attending system and identify the sleep student in the classroom .
