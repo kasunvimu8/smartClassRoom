@@ -6,7 +6,8 @@ smart class room contain facial recognition attending system and identify the sl
 we use some enhanced image processing methods to train the data as also recognise the objects.We use some machine learning  
 algorithem for detection the faces and eyes directly.
 In openCV this task is quite simple but if you see the output they are not accurate as much as we expected.There are several resons 
-behind that.In this project we are going to address those issues using image enchancement techniques. 
+behind that.In this project we are going to address those issues using image enchancement techniques.
+(by not using only the face for prediction but the eye and etc)
 smart class room contain facial recognition attending system and identify the sleep student in the classroom .we use some enhanced image processing enhanced methods to train the data as also recognise the objects.  
 
 pip install opencv-contrib-python
