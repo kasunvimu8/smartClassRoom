@@ -28,6 +28,10 @@ with open("pickles/eye-labels.pickle", 'rb') as f:
 
 cap = cv2.VideoCapture(0)
 
+def  enhancingImage (gray):
+    img=gray
+    return img ;
+
 while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -75,3 +79,5 @@ while(True):
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
+
+
