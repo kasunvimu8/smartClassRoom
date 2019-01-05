@@ -32,6 +32,7 @@ while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
     gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    processedImg=enhancingImage(gray)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.5, minNeighbors=5)
     for (x, y, w, h) in faces:
         #print(x,y,w,h)
