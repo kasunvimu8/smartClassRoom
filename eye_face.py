@@ -42,7 +42,7 @@ while(True):
         id_, conf = recognizer.predict(roi_gray)
         id_2, conf_eye = recognizer_eye.predict(roi_gray)
         print(conf , " " , conf_eye)
-        if conf>=40 and conf <= 85 and conf_eye>=110 and conf_eye <= 150:
+        if conf>=40 and conf <= 85 and conf_eye>=100 and conf_eye <= 150:
             #print(5: #id_)
             #print(labels[id_])
             font = cv2.FONT_HERSHEY_SIMPLEX
@@ -69,6 +69,7 @@ while(True):
     cv2.imshow('frame',frame)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         break
+
 
 # When everything done, release the capture
 cap.release()
