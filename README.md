@@ -10,5 +10,4 @@ behind that.In this project we are going to address those issues using image enc
 (by not using only the face for prediction but the eye and etc)
 smart class room contain facial recognition attending system and identify the sleep student in the classroom .we use some enhanced image processing enhanced methods to train the data as also recognise the objects.  
 
-pip install opencv-contrib-python
->>>>>>> 47b99016f6510af999aa9197c2ca4e47b1bf9807
+
