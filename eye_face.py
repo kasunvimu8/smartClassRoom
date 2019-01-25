@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import pickle
 import time
+import numpy as np
 
 face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')
 eye_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_eye.xml')
@@ -34,9 +35,16 @@ def histogramEq(img) :
    cl1 = clahe.apply(img)
    return cl1
 
+def logTranform(img) :
+    max_ = np.max(gray)
+    log_transform_image =(255/np.log(1+max_)) * np.log(1+gray)
+  #cv2.imshow('log_transform_image',log_transform_image)
+    return log_transform_image
+
 
 def enhancingImage(gray):
     img=histogramEq(gray)
+    img=logTranform(img);
     # cv2.imshow('gray',gray)
     # cv2.imshow('gray',img)
     return img

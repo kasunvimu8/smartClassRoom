@@ -14,7 +14,7 @@ import cv2
 # import os
 ## getting the mask from the rgb images
 def preprocessing(img):
-    # resizing using aspect ratio intact and finding the circle
+    # resizing using aspect ratio intact and finqding the circle
     # reduce size retain aspect ratio intact
     # invert BGR 2 RGB
     RGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
@@ -43,7 +43,7 @@ def preprocessing(img):
     # cv2.imwrite('mynew.jpg', mask)
     return (Im,th,th1,cls,g,RGB)
 
-path_dir = glob.glob('C:\\Users\\gayan\\Desktop\\Semster6\\CO543\\Project\\smartClassRoom\\Other images\\shehan\\*.jpg')
+path_dir = glob.glob('F:\\hard\\sem 6\\image processing\\project\\smartClassRoom\\Other images\\shehan\\*.jpg')
 for k in path_dir:
     print('running code....',k)
     img = cv2.imread(k)
