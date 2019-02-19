@@ -18,8 +18,7 @@ Smart class room contain facial recognition attending system and identify the sl
 algorithms for detection the faces and eyes directly. In openCV this task is quite simple but if you see the output they are not accurate as much as we expected. There are several reasons behind that. In this project we are going to address those issues using image enhancement techniques. (by not using only the face for prediction but the eye and etc.) smart class room contain facial recognition attending system and identify the sleep student in the classroom .we use some enhanced image processing enhanced methods to train the data as also recognize the objects.
 
 Identify faces  
-________________________________________
-
+--------------
 We use algorithm called “Chaos & AdaBoost ”.
 •	Firstly, this algorithm uses the image color segmentation for coarse screening on the face image.
 •	Secondly, the adaptive median filtering is applied to remove noise in  the face image to improve the quality of the face image.
@@ -27,7 +26,7 @@ We use algorithm called “Chaos & AdaBoost ”.
 
 
 How this works 
-________________________________________
+--------------
 
 In order to understand how Face Recognition works, let us first get an idea of the concept of a feature vector. Every Machine Learning algorithm takes a dataset as input and learns from this data. The algorithm goes through the data and identifies patterns in the data.
  For instance, suppose we wish to identify whose face is present in a given image, there are multiple things we can look at as a pattern:
@@ -56,12 +55,12 @@ Now that we have a basic understanding of how Face Recognition works, let us bui
 But the algorithm that we have use most of the time face classification for decide the predictions. And also we observed predictions most of the times go wrong because of the lightning conditions. Preprocessing Steps also affect for the predictions. Therefore we should make sure that these steps are maintained. Sometimes because of noise the predictions may go wrong.
 
 Additions to the existing solutions
-______________________________________
+-----------------------------------
 
 •	Classifications is based on basically face and eyes. (more unique features to classify the model higher the predictions accuracy )
 •	Histogram equalization. (Generally pixels from all regions of the image are good)
 
 Further Development
-________________________________________
+-------------------
 As our project name says we planning to build these programs to replace the traditional attending system and build an efficient teaching systems for lectures to find out that the students are listen to the lectures or not. (If the lecture is boring lecturer can change the way of lecturing) .or rather do something to overcome those conditions. Therefore this is only the first phase of it.
 
